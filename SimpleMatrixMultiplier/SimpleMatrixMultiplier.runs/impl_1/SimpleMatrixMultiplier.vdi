@@ -1,0 +1,533 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Jun 26 09:29:47 2023
+# Process ID: 29944
+# Current directory: C:/Users/ojasa/OneDrive/Documents/Research/REU2023/SimpleMatrixMultiplier/SimpleMatrixMultiplier.runs/impl_1
+# Command line: vivado.exe -log SimpleMatrixMultiplier.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source SimpleMatrixMultiplier.tcl -notrace
+# Log file: C:/Users/ojasa/OneDrive/Documents/Research/REU2023/SimpleMatrixMultiplier/SimpleMatrixMultiplier.runs/impl_1/SimpleMatrixMultiplier.vdi
+# Journal file: C:/Users/ojasa/OneDrive/Documents/Research/REU2023/SimpleMatrixMultiplier/SimpleMatrixMultiplier.runs/impl_1\vivado.jou
+# Running On: ojaslaptop, OS: Windows, CPU Frequency: 1498 MHz, CPU Physical cores: 4, Host memory: 16946 MB
+#-----------------------------------------------------------
+source SimpleMatrixMultiplier.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 449.375 ; gain = 164.867
+Command: link_design -top SimpleMatrixMultiplier -part xc7a35tcpg236-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 855.188 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 274 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'SimpleMatrixMultiplier' is not ideal for floorplanning, since the cellview 'SimpleMatrixMultiplier' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/ojasa/Downloads/basys3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [C:/Users/ojasa/Downloads/basys3.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [C:/Users/ojasa/Downloads/basys3.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [C:/Users/ojasa/Downloads/basys3.xdc:9]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK100MHZ]'. [C:/Users/ojasa/Downloads/basys3.xdc:9]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/ojasa/Downloads/basys3.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/ojasa/Downloads/basys3.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/ojasa/Downloads/basys3.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/ojasa/Downloads/basys3.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/ojasa/Downloads/basys3.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/ojasa/Downloads/basys3.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/ojasa/Downloads/basys3.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/ojasa/Downloads/basys3.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/ojasa/Downloads/basys3.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/ojasa/Downloads/basys3.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/ojasa/Downloads/basys3.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/ojasa/Downloads/basys3.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/ojasa/Downloads/basys3.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/ojasa/Downloads/basys3.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/ojasa/Downloads/basys3.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/ojasa/Downloads/basys3.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/ojasa/Downloads/basys3.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/ojasa/Downloads/basys3.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/ojasa/Downloads/basys3.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/ojasa/Downloads/basys3.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/ojasa/Downloads/basys3.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/ojasa/Downloads/basys3.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/ojasa/Downloads/basys3.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/ojasa/Downloads/basys3.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/ojasa/Downloads/basys3.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/ojasa/Downloads/basys3.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/ojasa/Downloads/basys3.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/ojasa/Downloads/basys3.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/ojasa/Downloads/basys3.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/ojasa/Downloads/basys3.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/ojasa/Downloads/basys3.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/ojasa/Downloads/basys3.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/ojasa/Downloads/basys3.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/ojasa/Downloads/basys3.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/ojasa/Downloads/basys3.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/ojasa/Downloads/basys3.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/ojasa/Downloads/basys3.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/ojasa/Downloads/basys3.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/ojasa/Downloads/basys3.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/ojasa/Downloads/basys3.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/ojasa/Downloads/basys3.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/ojasa/Downloads/basys3.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/ojasa/Downloads/basys3.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/ojasa/Downloads/basys3.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/ojasa/Downloads/basys3.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/ojasa/Downloads/basys3.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/ojasa/Downloads/basys3.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/ojasa/Downloads/basys3.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/ojasa/Downloads/basys3.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/ojasa/Downloads/basys3.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/ojasa/Downloads/basys3.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/ojasa/Downloads/basys3.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/ojasa/Downloads/basys3.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/ojasa/Downloads/basys3.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/ojasa/Downloads/basys3.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/ojasa/Downloads/basys3.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/ojasa/Downloads/basys3.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/ojasa/Downloads/basys3.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/ojasa/Downloads/basys3.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/ojasa/Downloads/basys3.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp6'. [C:/Users/ojasa/Downloads/basys3.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp6'. [C:/Users/ojasa/Downloads/basys3.xdc:210]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:210]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp14'. [C:/Users/ojasa/Downloads/basys3.xdc:212]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:212]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp14'. [C:/Users/ojasa/Downloads/basys3.xdc:213]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:213]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp7'. [C:/Users/ojasa/Downloads/basys3.xdc:215]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:215]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp7'. [C:/Users/ojasa/Downloads/basys3.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp15'. [C:/Users/ojasa/Downloads/basys3.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxp15'. [C:/Users/ojasa/Downloads/basys3.xdc:219]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn6'. [C:/Users/ojasa/Downloads/basys3.xdc:221]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn6'. [C:/Users/ojasa/Downloads/basys3.xdc:222]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn14'. [C:/Users/ojasa/Downloads/basys3.xdc:224]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:224]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn14'. [C:/Users/ojasa/Downloads/basys3.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn7'. [C:/Users/ojasa/Downloads/basys3.xdc:227]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:227]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn7'. [C:/Users/ojasa/Downloads/basys3.xdc:228]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:228]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn15'. [C:/Users/ojasa/Downloads/basys3.xdc:230]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:230]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vauxn15'. [C:/Users/ojasa/Downloads/basys3.xdc:231]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ojasa/Downloads/basys3.xdc:231]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ojasa/Downloads/basys3.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 983.668 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 80 Warnings, 79 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 987.684 ; gain = 533.484
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1009.633 ; gain = 21.949
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 555dcfe2
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1558.238 ; gain = 548.605
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 555dcfe2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.459 . Memory (MB): peak = 1894.832 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 50fa8d46
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.500 . Memory (MB): peak = 1894.832 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: a0f70e49
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.580 . Memory (MB): peak = 1894.832 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: a0f70e49
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.725 . Memory (MB): peak = 1894.832 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1009d2e1b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.817 . Memory (MB): peak = 1894.832 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1009d2e1b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.835 . Memory (MB): peak = 1894.832 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1894.832 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1009d2e1b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.845 . Memory (MB): peak = 1894.832 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1009d2e1b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1894.832 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1009d2e1b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1894.832 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1894.832 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1009d2e1b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1894.832 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 80 Warnings, 79 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1894.832 ; gain = 907.148
+INFO: [runtcl-4] Executing : report_drc -file SimpleMatrixMultiplier_drc_opted.rpt -pb SimpleMatrixMultiplier_drc_opted.pb -rpx SimpleMatrixMultiplier_drc_opted.rpx
+Command: report_drc -file SimpleMatrixMultiplier_drc_opted.rpt -pb SimpleMatrixMultiplier_drc_opted.pb -rpx SimpleMatrixMultiplier_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/ojasa/OneDrive/Documents/Research/REU2023/SimpleMatrixMultiplier/SimpleMatrixMultiplier.runs/impl_1/SimpleMatrixMultiplier_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ojasa/OneDrive/Documents/Research/REU2023/SimpleMatrixMultiplier/SimpleMatrixMultiplier.runs/impl_1/SimpleMatrixMultiplier_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1894.832 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 71f96b92
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.121 . Memory (MB): peak = 1894.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1894.832 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 1948 I/O ports
+ while the target  device: 7a35t package: cpg236, contains only 106 available user I/O. The target device has 106 usable I/O pins of which 0 are already occupied by user-locked I/Os.
+ To rectify this issue:
+ 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
+ 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+ 3. Consider design changes to reduce the number of I/Os necessary.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-68] Instance A_IBUF[0]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[100]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[101]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[102]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[103]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[104]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[105]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[106]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[107]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[108]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[109]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[10]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[110]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[111]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[112]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[113]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[114]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[115]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[116]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[117]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[118]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[119]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[11]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[120]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[121]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[122]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[123]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[124]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[125]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[126]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[127]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[128]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[129]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[12]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[130]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[131]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[132]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[133]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[134]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[135]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[136]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[137]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[138]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[139]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[13]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[140]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[141]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[142]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[143]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[144]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[145]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[146]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[147]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[148]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[149]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[14]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[150]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[151]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[152]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[153]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[154]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[155]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[156]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[157]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[158]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[159]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[15]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[160]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[161]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[162]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[163]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[164]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[165]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[166]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[167]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[168]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[169]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[16]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[170]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[171]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[172]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[173]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[174]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[175]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[176]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[177]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[178]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[179]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[17]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[180]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[181]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[182]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[183]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[184]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[185]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[186]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[187]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[188]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[189]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance A_IBUF[18]_inst (IBUF) is not placed
+INFO: [Common 17-14] Message 'Place 30-68' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 9a3a3b59
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1894.832 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 9a3a3b59
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1894.832 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 9a3a3b59
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1894.832 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+43 Infos, 80 Warnings, 79 Critical Warnings and 103 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 26 09:30:29 2023...

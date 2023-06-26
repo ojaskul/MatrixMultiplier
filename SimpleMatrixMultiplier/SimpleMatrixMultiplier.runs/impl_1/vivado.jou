@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Jun 26 09:29:47 2023
+# Process ID: 29944
+# Current directory: C:/Users/ojasa/OneDrive/Documents/Research/REU2023/SimpleMatrixMultiplier/SimpleMatrixMultiplier.runs/impl_1
+# Command line: vivado.exe -log SimpleMatrixMultiplier.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source SimpleMatrixMultiplier.tcl -notrace
+# Log file: C:/Users/ojasa/OneDrive/Documents/Research/REU2023/SimpleMatrixMultiplier/SimpleMatrixMultiplier.runs/impl_1/SimpleMatrixMultiplier.vdi
+# Journal file: C:/Users/ojasa/OneDrive/Documents/Research/REU2023/SimpleMatrixMultiplier/SimpleMatrixMultiplier.runs/impl_1\vivado.jou
+# Running On: ojaslaptop, OS: Windows, CPU Frequency: 1498 MHz, CPU Physical cores: 4, Host memory: 16946 MB
+#-----------------------------------------------------------
+source SimpleMatrixMultiplier.tcl -notrace
